@@ -26,29 +26,25 @@
                 <li>HINDU BUKAR BIU</li>
             </ul>
     </div>
-    <div class="container">  
-
-                <div class="form">
-                <div class="div-name-age">
-                    <input type="text" name="name" class="form-control"
-                    id="name" placeholder="Enter Name">
-                </div>
-
-                <div class="div-name-age">
-                    <input type="text" name="address" class="form-control"
-                    id="address" placeholder="Enter Address"><br>
-                </div>
-
-                <div class="div-address-email">
-                    <input type="text" name="email" class="form-control"
-                    id="email" placeholder="Enter Email">
-                </div>
-
-                <div class="div-address-email">
-                    <input type="text" name="position" class="form-control"
-                    id="position" placeholder="Enter position">
-                </div>
-                <div class="col-lg-12 mt-5">
+    <form>
+        <div class="name-address">
+            <input type="text" name="name" class="form-control"
+            id="name" placeholder="Enter Name">
+    
+            <input type="text" name="address" class="form-control"
+            id="address" placeholder="Enter Address">
+        </div>
+       
+        <div class="email-position">
+            <input type="text" name="email" class="form-control"
+            id="email" placeholder="Enter Email">
+    
+            <input type="text" name="position" class="form-control"
+            id="position" placeholder="Enter position">
+        </div>
+       
+    </form>
+                <div class="btns">
                     <button class="btn-success" id="submit" onclick="AddData()">Add Data</button>
                     <button class="btn-primary" id="update">Update</button>
                 </div>

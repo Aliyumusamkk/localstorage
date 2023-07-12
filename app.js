@@ -1,9 +1,11 @@
   // validate form input before adding submiting data
+ 
   function validateForm(){
     var name = document.getElementById("name").value;
     var address = document.getElementById("address").value;
     var email = document.getElementById("email").value;
     var position = document.getElementById("position").value;
+    
 
     if(name == ""){
         alert("Name is required");
@@ -48,7 +50,7 @@ function showData(){
         html += "<td>" + element.address + "</td>";
         html += "<td>" + element.email + "</td>";
         html += "<td>" + element.position + "</td>";
-        html +='<td><button onclick="deleteData('+index+')"class="btn-danger" style="background: red;width: 70px; font-size: 20px; color: white; border-radius: 5px;border:1px solid white;">Delete</button><button onclick="updateData('+index+')"class="btn-warning" style="background: orange;width: 70px; color: white; font-size: 20px; border-radius: 5px; border:1px solid white;">Edit</button></td>';
+        html +='<td><button onclick="deleteData('+index+')"style="background: red;width: 70px; font-size: 20px; color: white; border-radius: 5px;border:1px solid white;">Delete</button><button onclick="updateData('+index+')"style="background: orange;width: 70px; color: white; font-size: 20px; border-radius: 5px; border:1px solid white;">Edit</button></td>';
         html += "<tr>";   
     });
 
@@ -126,10 +128,10 @@ function updateData(index){
 
     document.querySelector("#update").onclick = function(){
         if(validateForm() == true){
-        peoplelist[index].name = document.getElementById("name").value;
-        peoplelist[index].address = document.getElementById("address").value;
-        peoplelist[index].email = document.getElementById("email").value;
-        peoplelist[index].position = document.getElementById("position").value;
+            peoplelist[index].name = document.getElementById("name").value;
+            peoplelist[index].address = document.getElementById("address").value;
+            peoplelist[index].email = document.getElementById("email").value;
+            peoplelist[index].position = document.getElementById("position").value;
 
         localStorage.setItem("peoplelist", JSON.stringify(peoplelist));
 
@@ -147,3 +149,4 @@ function updateData(index){
     }
     
 }
+

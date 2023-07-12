@@ -9,7 +9,8 @@
 </head>
 <body>
     <div class="header">
-        <h1>TEAM LEADERS OF ACTIVE TECH CONSULTANCY</h1>
+            <h1>TEAM LEADERS OF ACTIVE TECH CONSULTANCY</h1>
+
             <img src="dev_images/director.jpg">
             <img src="dev_images/ct.jpg">
             <img src="dev_images/dev0p.jpg">
@@ -27,22 +28,19 @@
             </ul>
     </div>
     <form>
-        <div class="name-address">
-            <input type="text" name="name" class="form-control"
-            id="name" placeholder="Enter Name">
+            <input type="text" name="name" id="name" placeholder="Enter Name">
+            <br>
+            <br>
     
-            <input type="text" name="address" class="form-control"
-            id="address" placeholder="Enter Address">
-        </div>
+            <input type="text" name="address" id="address" placeholder="Enter Address">
+            <br>
+            <br>
        
-        <div class="email-position">
-            <input type="text" name="email" class="form-control"
-            id="email" placeholder="Enter Email">
+            <input type="text" name="email" id="email"placeholder="Enter Email">
+            <br>
+            <br>
     
-            <input type="text" name="position" class="form-control"
-            id="position" placeholder="Enter position">
-        </div>
-       
+            <input type="text" name="position" id="position" placeholder="Enter position">       
     </form>
                 <div class="btns">
                     <button class="btn-success" id="submit" onclick="AddData()">Add Team Member</button>
@@ -55,7 +53,7 @@
             <div class="col-12">
                 <table class="table-cl" id="teamTable" border="1" cellpadding="20">
                     <thead>
-                        <tr>
+                        <tr style="color: seagreen; text-align: center; font-size: 30px;">
                             <th>Name</th>
                             <th>Address</th>
                             <th>Email</th>
